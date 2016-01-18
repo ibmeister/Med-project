@@ -1,0 +1,490 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,300,400,700);
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+h1, .jumbotron h1 {
+	font-size: 44px;
+	font-weight: 300;
+	font-style: normal;
+	font-variant: normal;
+}
+
+h2 {
+	font-size: 28px;
+	font-weight: 300;
+}
+
+.jumbotron {
+	padding-bottom: 0;
+	position: relative;
+}
+
+/*
+*	Override bootstraps container div
+*/
+.nav {
+	float: right;
+	margin-top: 12px;
+	font-size: 14px;
+}
+
+#myNavBar {
+	background: #c3272b;
+	z-index: 31;
+	border: 0;
+}
+
+#navbar-collapse p, #navbar-collapse a {
+	color: #fbf5f0;
+	-webkit-text-shadow: none;
+    text-shadow: none;
+}
+
+#jumboWritings {
+	float: left;
+	margin-top: 140px;
+	padding-bottom: 104px;
+}
+
+#homeJumbotron {
+	background: #c3272b;
+	color: #ddd;
+}
+
+#jumbotronContainer {
+	background: url(../img/mr-panther.png) no-repeat right bottom;
+}
+
+#jumboDescription {
+	margin-top: 56px;
+}
+
+#jumboDescription  p {
+	margin-top: 16px;
+	font-size: 21px;
+	line-height: 32px;
+	letter-spacing: 1px;
+}
+
+#joinCommittee {
+	margin-top: 40px;
+	float: left;
+}
+
+.backButton {
+	float: left;
+	margin: 0 12px 0 0;
+}
+
+#firstStage, #secondStage, #thirdStage {
+	float: left;
+	display: none;
+	overflow: hidden;
+}
+
+#fourthStage {
+	display: none;
+	position: relative;
+	float: left;
+}
+
+#fourthStage {
+	position: relative;
+}
+
+#rolesContinueButton, #committeeContinueButton, #fNameContinueButton, #lNameContinueButton {
+	float: left;
+	margin-top: 0;
+	font-size: 18px;
+	background: #4a2c2c;
+	padding: 10px 40px 10px 40px;
+	border: 0;
+	border-radius: 0 4px 4px 0;
+}
+
+#committeeEmail, #committeeRoles, #committeeFirstName, #committeeLastName {
+	margin-top: 0;
+	width: 380px;
+	font-size: 18px;
+	padding: 0 0 0 20px;
+	height: 45px;
+	border: 0;
+	border-radius: 4px 0 0 4px;
+	background: #eeebeb;
+	color: #888;
+	float: left;
+}
+
+#committeeRoles {
+	border-radius: 4px 0 0 4px;
+}
+
+#roles {
+	position: absolute;
+	z-index: 30;
+	background: #4a2c2c;
+	top: 52px;
+	border-radius: 0 0 4px 4px;
+	width: 380px;
+	padding: 12px 20px 12px 20px;
+	display: none;
+	left: 57px;
+}
+
+#rolesClose {
+	position: absolute;
+	color: #999;
+	top: 2px;
+	right: 4px;
+	font-stretch: expanded;
+	transform:scale(1.1,0.9); /* W3C */
+	-webkit-transform:scale(1.1,0.9); /* Safari and Chrome */
+	-moz-transform:scale(1,0.7); /* Firefox */
+	-ms-transform:scale(1,0.7); /* IE 9 */
+	-o-transform:scale(1,0.7); /* Opera */
+}
+
+#leftPadding {
+	position: absolute;
+	left: 57px;
+	top: 0;
+	height: 41px;
+	width: 12px;
+	background: #eeebeb;
+	border-radius: 4px 0 0 0;
+}
+
+#rightPadding {
+	position: absolute;
+	right: 128px;
+	top: 0;
+	height: 45px;
+	background: #eeebeb;
+	padding: 0 2px 0 2px;
+}
+
+#rolesDropdown {
+	margin: 0 6px 0 6px;
+	display: none;
+}
+
+#rolesDropdown img {
+	margin-top: 10px;
+}
+
+#marketing, #finance, #experience, #logistics, #emptyRoles {
+	float: left;
+	width: 100%;
+	clear: both;
+	padding: 4px 0 4px 0;
+}
+
+#marketing p, #finance p, #experience p, #logistics p, #emptyRoles p {
+	font-size: 18px;
+	float: left;
+}
+
+#emptyRoles p {
+	display: none;
+}
+
+.addRole {
+	float: right;
+	margin-top: 4px;
+}
+
+#resetRoles {
+	float: right;
+	font-size: 16px;
+	text-decoration: underline;
+	color: #b9a3a3;
+	margin-top: 4px;
+}
+
+/*
+* Style the placeholder for committee email
+*/
+#committeeEmail::-webkit-input-placeholder, #committeeRoles::-webkit-input-placeholder { 
+    color:    #9c9393;
+}
+#committeeEmail:-moz-placeholder, #committeeRoles:-moz-placeholder { 
+    color:    #9c9393;
+}
+#committeeEmail::-moz-placeholder, #committeeRoles::-moz-placeholder { 
+    color:    #9c9393;
+}
+#committeeEmail:-ms-input-placeholder, #commmitteeRoles:-ms-input-placeholder { 
+    color:    #9c9393;
+}
+#committeeFirstName::-webkit-input-placeholder, #committeeLastName::-webkit-input-placeholder { 
+    color:    #9c9393;
+}
+#committeeFirstName:-moz-placeholder, #committeeLastName:-moz-placeholder { 
+    color:    #9c9393;
+}
+#committeeFirstName::-moz-placeholder, #committeeLastName::-moz-placeholder { 
+    color:    #9c9393;
+}
+#committeeFirstName:-ms-input-placeholder, #commmitteeLastName:-ms-input-placeholder { 
+    color:    #9c9393;
+}
+
+#joinCommitteeButton {
+	color: #ccc;
+	font-size: 18px;
+	background: #4a2c2c;
+	padding: 10px 40px 10px 40px;
+	border: 0;
+	border-radius: 4px;
+	margin-top: 0px;
+	float: left;
+}
+
+#endTransparency {
+	width: 100%;
+	height: 6px;
+	background: #000;
+	opacity: 0.2;
+	position: absolute;
+	bottom: 0;
+}
+
+#about {
+	margin-top: 100px;
+	margin-bottom: 160px;
+}
+
+#aboutIcon {
+	width: 13%;
+	float: left;
+}
+
+#aboutDescription {
+	width: 87%;
+	float: right;
+	padding-top: 8px;
+}
+
+#aboutHeader {
+	color: #7f7f7f;
+}
+
+#aboutText {
+	margin-top: 32px;
+	color: #7e7676;
+}
+
+#fullAbout {
+	line-height: 32px;
+	font-size: 16px;
+}
+
+#indicateInterest {
+	margin-top: 68px;
+}
+
+p#interestQuery {
+	font-size: 20px;
+	color: #c3272b;
+	margin-bottom: 16px;
+}
+
+#interestEmail {
+	width: 408px;
+	font-size: 20px;
+	padding: 0 0 0 20px;
+	height: 47px;
+	border: 1px solid #cdcdcd;
+	background: #eeebeb;
+	color: #9c9393;
+}
+
+#interestEmail:focus {
+	background: #fff;
+}
+
+#subscribeButton {
+	color: #ddd;
+	font-size: 18px;
+	background: #c3272b;
+	padding: 10px 40px 10px 40px;
+	border: 0;
+	border-radius: 4px;
+	margin-left: 12px;
+}
+
+#committeeLightboxContainer, #subscribeLightboxContainer {
+
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	min-height: 100%;
+	min-width: 100%;
+	z-index: 50;
+	display: none;
+}
+
+#subscribeLightboxContainer {
+	z-index: 52;
+}
+
+#committeeLightbox, #subscribeLightbox {
+	
+	position: absolute;
+	left: 40px;
+	top: 40px;
+	z-index: 51;
+	background: #fff;
+	border-radius: 5px;
+	padding: 24px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+	font-size: 16px;
+	min-width: 400px;
+}
+
+#subscribeEmailEntered .subscribeEntry {
+	color: #888;
+}
+
+#committeeLightboxTitle {
+	margin-top: 16px;
+	margin-left: 20px;
+	margin-bottom: 12px;
+	float: left;
+}
+
+#rolesEntry {
+	float: left;
+}
+
+.rolesContent {
+	float: left;
+	clear: both;
+}
+
+#buttons {
+	float: right;
+	margin-top: 40px;
+}
+
+#subscribeConfirmationButtons{
+	float: right;
+	margin-top: 20px;
+}
+
+.closeXButton {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	font-stretch: expanded;
+	transform:scale(2,1); /* W3C */
+	-webkit-transform:scale(1.3,1); /* Safari and Chrome */
+	-moz-transform:scale(2,1); /* Firefox */
+	-ms-transform:scale(2,1); /* IE 9 */
+	-o-transform:scale(2,1); /* Opera */
+}
+
+.closeXButton:hover {
+	color: #c3272b;
+	text-decoration: none;
+}
+
+#cancelCommitteeSubmission, #cancelSubscribeSubmission {
+	float: right;
+	color: #ccc;
+	font-size: 16px;
+	/*background: #4a2c2c;*/
+	background: #333;
+	padding: 8px 20px 8px 20px;
+	border: 0;
+	margin-top: 0px;
+	margin-right: 20px;
+	border-radius: 4px;
+}
+
+#submitCommitteeEntry, #submitSubscribeEntry {
+	color: #ccc;
+	font-size: 16px;
+	background: #455b42;
+	padding: 8px 20px 8px 20px;
+	border: 0;
+	margin-top: 0px;
+	border-radius: 4px;
+	float: right;
+}
+
+.committeeEntry {
+	float: left;
+	clear: both;
+	width: 440px;
+	margin-top: 12px;
+}
+
+.labelContainer {
+	float: left;
+	width: 180px;
+	margin-right: 12px;
+}
+
+#committeeLightbox label, #subscribeLightbox label{
+	
+	float: right;
+}
+
+#committeeLightbox p, #subscribeLightbox p{
+	
+	float: left;
+	clear: right;
+}
+
+#subscribeLightbox {
+
+	z-index: 53;
+}
+
+.loading {
+	margin-top: 16px;
+}
+
+.requestCallback h2 {
+	color: #455b42;
+	margin-left: 20px;
+}
+
+.requestCallback p {
+	margin-top: 12px;
+	margin-left: 20px;
+	color: #999;
+}
+
+.loading {
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#copyright {
+	color: #776767;
+	padding: 12px 0 32px 0;
+}
+
+.jumbotron .container {
+	max-width: 960px;
+	padding: 0;
+}
+
+@media (min-width: 1000px) {
+	.container {
+		max-width: 960px;
+		padding: 0;
+	}
+}
