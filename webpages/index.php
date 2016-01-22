@@ -119,7 +119,7 @@
 					<li><a href="#contact">Contact Us</a></li>
 				</ul>
 			</div>
-		</div><!-- End of Nav ontainer -->
+		</div><!-- End of Nav container -->
 	</nav>
 	<!-- End Navbar -->
 	
