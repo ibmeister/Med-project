@@ -4,7 +4,7 @@
 <head>
 </head>
 	<meta charset="utf-8">
-	<title>PantherHacks Hackathon 2016</title>
+	<title>Med Proj</title>
 	<meta name = "description" content = "PantherHacks App Contest Top Hackathon">
 	
 	<!-- Latest compiled and minified CSS -->
